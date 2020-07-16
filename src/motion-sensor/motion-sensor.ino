@@ -3,14 +3,20 @@
  */
  
 int ledPin = 13;                // choose the pin for the LED
-int inputPin = 2;               // choose the input pin (for PIR sensor)
+int inputPin1 = 2;               // choose the input pin (for PIR sensor)
+int inputPin2 = 3;
+int inputPin3 = 4;
+int inputPin4 = 5;
 int pirState = LOW;             // we start, assuming no motion detected
 int val = 0;                    // variable for reading the pin status
 int buzzerPin = 8;
  
 void setup() {
   pinMode(ledPin, OUTPUT);      // declare LED as output
-  pinMode(inputPin, INPUT);     // declare sensor as input
+  pinMode(inputPin1, INPUT);     // declare sensor as input
+	pinMode(inputPin2, INPUT);     // declare sensor as input
+	pinMode(inputPin3, INPUT);     // declare sensor as input
+	pinMode(inputPin4, INPUT);     // declare sensor as input
   pinMode(buzzerPin, OUTPUT);
   Serial.begin(9600);
 }
