@@ -1,5 +1,14 @@
 /*
  * PIR sensor tester
+
+The idea here is to have an arduino nano sitting in a box, powered by
+4 AA batteries delivering up to 6 volts.  1 to 6 feeds from sensor pods 
+will come in and attach.
+
+A common power and ground rail will be needed.
+
+Perhaps a dip switch added in to indicate the number of sensors??? 
+
  */
  
 int ledPin = 13;                // choose the pin for the LED
